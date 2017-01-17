@@ -1,0 +1,677 @@
+ 
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8"utf-8">
+<title>树形菜单文档 - layui</title>
+<meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  
+  <link rel="stylesheet" href="../../../layui/css/layui.css"   media="all">
+  <link rel="stylesheet" href="../../../css/Global.css"  media="all">
+  
+</head>
+<body>
+<div class="layui-header header header-doc">
+  <div class="layui-main">
+    <a class="logo" href="../../index.htm">
+      <img src="../../../res.layui.com/images/layui/logo.png" alt="layui">
+    </a>
+    <ul class="layui-nav">
+      <li class="layui-nav-item layui-this">
+        <a href="../index.htm" >文档</a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="../../demo/index.htm">演示</a>
+      </li>
+      
+      <li class="layui-nav-item">
+        <a href="../../../fly.layui.com/index.htm"  target="_blank">社区</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<ul class="site-dir">
+  <li><a href="#use"><cite>使用</cite></a></li>
+  <li><a href="#exports"><cite>核心方法</cite></a></li>
+  <li><a href="#nodes"><cite>节点数据格式</cite></a></li>
+  <li><a href="#click"><cite>点击节点回调</cite></a></li>
+  <li><a href="#skin"><cite>风格定义</cite></a></li>
+  <li><a href="#other"><cite>其它支持</cite></a></li>
+</ul>
+<div class="layui-main site-inline">
+  <div class="site-tree">
+  <ul class="layui-tree">
+  
+    <li><h2>基础说明</h2></li>
+  
+    <li class="site-tree-noicon ">
+      <a href="../index.htm" ><cite>开始使用</cite></a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/infrastructure.html" >
+        <cite>底层支撑</cite>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/element.html" >
+        <cite>页面元素</cite>
+        <em>规范 / 公共类、属性</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/modules.html" >
+        <cite>组件规范</cite>
+        <em>使用 / 模块扩展</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/faq.html">
+        <cite>常见问题</cite>
+      </a>
+    </li>
+    
+    <li><h2>页面元素</h2></li>
+    
+    
+    
+    <li class="site-tree-noicon ">
+      <a href="../element/color.html">
+        <cite>颜色</cite>
+        <em>内置的色值参考</em>
+      </a>
+    </li>
+    
+    <li class="site-tree-noicon ">
+      <a href="../element/icon.html">
+        <cite>图标</cite>
+        <em>字体图标</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/auxiliar.html">
+        <cite>辅助</cite>
+        <em>引用 / 分块 / 横线…</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/button.html" >
+        <cite>按钮</cite>
+        <em>button组</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/form.html">
+        <cite>表单</cite>
+        <em>form元素集合</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/nav.html">
+        <cite>导航</cite>
+        <em>菜单 / Tab / 面包屑 …</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/table.html">
+        <cite>表格</cite>
+        <em>table - v1.0.5 新增</em>
+      </a>
+    </li>
+   
+    
+    <li><h2>内置组件</h2></li>
+    
+    <li >
+      <a href="layer.html">
+        <i class="layui-icon" style="top: 3px;">&#xe638;</i><cite>弹出层</cite>
+        <em>layer</em>
+      </a>
+    </li>
+    <li >
+      <a href="layim.html">
+        <i class="layui-icon" style="position: relative; top: 3px;">&#xe63a;</i>
+        <cite>即时通讯</cite>
+        <em>layim</em>
+      </a>
+    </li>
+    <li >
+      <a href="laydate.html">
+        <i class="layui-icon" style="top: 1px;">&#xe637;</i><cite>日期时间选择</cite>
+        <em>laydate</em>
+      </a>
+    </li>
+    <li >
+      <a href="laypage.html">
+        <i class="layui-icon">&#xe633;</i><cite>分页</cite>
+        <em>laypage</em>
+      </a>
+    </li>
+    <li >
+      <a href="laytpl.html">
+        <i class="layui-icon">&#xe628;</i><cite>模板引擎</cite>
+        <em>laytpl</em>
+      </a>
+    </li>
+    <li >
+      <a href="layedit.html">
+        <i class="layui-icon">&#xe639;</i>
+        <cite>富文本编辑器</cite>
+        <em>layedit</em>
+      </a>
+    </li>
+    <li >
+      <a href="form.html">
+        <i class="layui-icon" style="top: 2px;">&#xe63c;</i>
+        <cite>表单</cite>
+        <em>form</em>
+      </a>
+    </li>
+    <li >
+      <a href="upload.html">
+        <i class="layui-icon">&#xe62f;</i>
+        <cite>文件上传</cite>
+        <em>upload</em>
+      </a>
+    </li>
+    <li >
+      <a href="element.html">
+        <i class="layui-icon" style="top: 1px; font-size: 18px;">&#xe62a;</i>
+        <cite>常用元素操作</cite>
+        <em>element</em>
+      </a>
+    </li>
+    <li class="layui-this">
+      <a href="tree.html">
+        <i class="layui-icon">&#xe62e;</i>
+        <cite>树形菜单</cite>
+        <em>tree</em>
+      </a>
+    </li>
+    
+    <li >
+      <a href="util.html">
+        <i class="layui-icon">&#xe631;</i>
+        <cite>工具块</cite>
+        <em>util</em>
+      </a>
+    </li>
+    <li >
+      <a href="flow.html">
+        <i class="layui-icon">&#xe636;</i>
+        <cite>流加载</cite>
+        <em>flow</em>
+      </a>
+    </li>
+    <li >
+      <a href="code.html">
+        <i class="layui-icon" style="top: 1px;">&#xe635;</i>
+        <cite>代码修饰器</cite>
+        <em>code</em>
+      </a>
+    </li>
+  </ul>
+</div>
+
+  <div class="site-content">
+    <h1 class="site-h1"><i class="layui-icon">&#xe62e;</i>树形菜单文档 - layui.tree</h1>
+    <div class="site-tips site-text">
+      <p>也许你对树菜单再熟悉不过了，然而你仍有可能更青睐layui的tree，它也许比以往你知道的任何一个类似的组件都更轻量、简单，你在享受许多功能的同时，甚至不用去记太多的参数。另外，最大的重点在于，她在UI上完全遵循于当下主流的风格，并且具备高度可扩展性，会与你的许多页面非常融洽的并存。</p>
+    </div>
+    <div class="site-tips site-text">
+      <p>模块加载名称：<a>tree</a></p>
+    </div>
+    
+    
+<div style="margin: 15px 0; text-align: center; background-color: #F2F2F2;">
+  <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6111334333458862" data-ad-slot="9841027833"></ins>
+</div>
+
+    
+    <div class="site-title">
+      <a name="use"></a>
+      <fieldset><legend>使用</legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>假设你的页面任意位置有这样一个元素</p>
+      <pre class="layui-code" lay-title="HTML" lay-encode="true">
+<ul id="demo"></ul>
+      </pre>
+      <p>那么你的js可以这样书写</p>
+      <pre class="layui-code" lay-title="JavaScript" lay-encode="true">
+layui.tree({
+  elem: '#demo' //传入元素选择器
+  ,nodes: [{ //节点
+    name: '父节点1'
+    ,children: [{
+      name: '子节点11'
+    },{
+      name: '子节点12'
+    }]
+  },{
+    name: '父节点2（可以点左侧箭头，也可以双击标题）'
+    ,children: [{
+      name: '子节点21'
+      ,children: [{
+        name: '子节点211'
+      }]
+    }]
+  }]
+});
+      </pre>
+      <p>于是就直接有了下面的样子</p>
+    </div>
+    
+    <ul id="demo1"></ul>
+    
+    <div class="site-title">
+      <a name="exports"></a>
+      <fieldset><legend>核心方法</legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>语法：<a>layui.tree(options)</a></p>
+      <pre class="layui-code" lay-title="加载">
+layui.use('tree', function(){
+  layui.tree(options);
+});
+      </pre>
+      <p>options是一个对象参数，可支持的key如下表</p>
+      <table class="site-table">
+        <thead>
+          <tr>
+            <th>参数</th>
+            <th>类型</th>
+            <th>描述</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td>elem</td>
+            <td>string</td>
+            <td>指定元素的选择器</td>
+          </tr>
+          <tr>
+            <td>skin</td>
+            <td>string</td>
+            <td>风格定义</td>
+          </tr>
+          <tr>
+            <td>click</td>
+            <td>Function</td>
+            <td>点击节点的回调，详细介绍见下文</td>
+          </tr>
+          <tr>
+            <td>href</td>
+            <td>string</td>
+            <td>节点链接（可选），未设则不会跳转</td>
+          </tr>
+          <tr>
+            <td>target</td>
+            <td>string</td>
+            <td>节点打开方式（即a的target值），必须href设定后才有效</td>
+          </tr>
+          <tr>
+            <td>nodes</td>
+            <td>object</td>
+            <td>节点数据，详细格式见下表</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="site-title">
+      <a name="nodes"></a>
+      <fieldset><legend>节点数据格式</legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>参数<a>nodes</a>是整个树形菜单渲染的关键，其所接受的格式如下</p>
+      <table class="site-table">
+        <thead>
+          <tr>
+            <th style="width: 120px;">参数</th>
+            <th>类型</th>
+            <th>描述</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td>name</td>
+            <td>string</td>
+            <td>节点名称</td>
+          </tr>
+          <tr>
+            <td>spread</td>
+            <td>boolean</td>
+            <td>是否展开状态（默认false）</td>
+          </tr>
+          <tr>
+            <td>href</td>
+            <td>string</td>
+            <td>节点链接（可选），未设则不会跳转</td>
+          </tr>
+          <tr>
+            <td>children</td>
+            <td>object</td>
+            <td>同nodes节点，可无限延伸。如：
+            <pre class="layui-code">
+children: [{
+  name: '子节点'
+  ,spread: true //展开
+  ,children: [{
+    name: '子子节点'
+    ,children: [……]
+  }]
+}, {……}]       
+            </pre>
+            </td>
+          </tr>
+          <tr>
+            <td>自定义参数</td>
+            <td>-</td>
+            <td>除了上述必要键外，你还可以给每条节点传入自定义参数，如：alias、id等。那么在触发click回调时，就会把节点所拥有的参数都返回给你。
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>这是nodes节点一个较为完整的例子</p>
+      <pre class="layui-code" lay-title="节点数据格式" lay-skin="notepad" lay-height="300px">
+[ //节点
+  {
+    name: '常用文件夹'
+    ,id: 1
+    ,alias: 'changyong'
+    ,children: [
+      {
+        name: '所有未读'
+        ,id: 11
+        ,href: 'http://www.layui.com/'
+        ,alias: 'weidu'
+      }, {
+        name: '置顶邮件'
+        ,id: 12
+      }, {
+        name: '标签邮件'
+        ,id: 13
+      }
+    ]
+  }, {
+    name: '我的邮箱'
+    ,id: 2
+    ,spread: true
+    ,children: [
+      {
+        name: 'QQ邮箱'
+        ,id: 21
+        ,spread: true
+        ,children: [
+          {
+            name: '收件箱'
+            ,id: 211
+            ,children: [
+              {
+                name: '所有未读'
+                ,id: 2111
+              }, {
+                name: '置顶邮件'
+                ,id: 2112
+              }, {
+                name: '标签邮件'
+                ,id: 2113
+              }
+            ]
+          }, {
+            name: '已发出的邮件'
+            ,id: 212
+          }, {
+            name: '垃圾邮件'
+            ,id: 213
+          }
+        ]
+      }, {
+        name: '阿里云邮'
+        ,id: 22
+        ,children: [
+          {
+            name: '收件箱'
+            ,id: 221
+          }, {
+            name: '已发出的邮件'
+            ,id: 222
+          }, {
+            name: '垃圾邮件'
+            ,id: 223
+          }
+        ]
+      }
+    ]
+  }
+]      
+      </pre>
+      <p>效果如下：</p>
+    </div>
+    
+    <div style="display: inline-block; width: 200px; height: 200px; padding: 10px; border: 1px solid #ddd; overflow: auto;">
+      <ul id="demo2"></ul>
+    </div>
+    <div class="site-tips" style="display: inline-block; height: 200px; width: 485px; padding: 10px; margin-left: 10px; vertical-align: top;" id="demo2-view">
+      点击左侧菜单，右侧将会显示当前点击节点的对应参数
+    </div>
+    
+    <div class="site-title">
+      <a name="click"></a>
+      <fieldset><legend>点击节点的回调</legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>很多时候我们并不只是单纯地展现一个树形菜单，而是要进行目标选择后的结果渲染。譬如选择节点A，我们希望看到节点A的结果。如果你对该节点设置了href属性，则直接跳转即可。但很多时候我们还可能需要获取节点的其它参数来渲染出选择节点后的结果，这就需要我们的click回调。</p>
+      <pre class="layui-code" lay-title="语法">
+layui.tree({
+  elem: '#demo'
+  ,nodes: [{ //节点数据
+    name: '节点A'
+    ,children: [{
+      name: '节点A1'
+    }]
+  }, {
+    name: '节点B'
+    ,children: [{
+      name: '节点B1'
+      ,alias: 'bb' //可选
+      ,id: '123' //可选
+    }, {
+      name: '节点B2'
+    }]
+  }] 
+  ,click: function(node){
+    console.log(node) //node即为当前点击的节点数据
+  }  
+});
+ 
+//我们假设你点击的是上述的节点B1，那么click回调返回的参数如下
+<pre class="layui-code" lay-skin="notepad" lay-title="点击节点得到的node值">
+{
+  "name": "节点B1"
+  ,"alias": "bb"
+  ,"id": "123"
+}
+</pre>
+      </pre>
+      <p></p>
+    </div>
+    
+    <div class="site-title">
+      <a name="skin"></a>
+      <fieldset><legend>风格定义</legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>你肯定不会满足于tree的单一展现风格，我们的<a>skin</a>参数允许你改变菜单的样式。由于我们的所有图标都是采用文本字体，因此你只需在css设置一个color就可以改变图标的颜色（你是不是很想把文件夹的颜色改成屎黄色？）。layui会内置多种风格的选择，但目前考虑到发布的急切性，所以暂时还没有内置，后续如果有提供，将会在下述表格中展现。</p>
+      <table class="site-table">
+        <thead>
+          <tr>
+            <th>skin名</th>
+            <th>描述</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td>无需设置</td>
+            <td>暂只提供默认风格</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>因此我们更推荐你自己去定义它。规范如下：</p>
+      <pre class="layui-code" lay-title="假设你在layui.tree设置了一个skin">
+      
+skin: 'shihuang'
+      </pre>
+      <p>那么tree将会追加一个名为<a>layui-tree-skin-shihuang</a>的class，你只需要根据它去重置tree的样式即可（借助Chrome调试工具看元素选择器），下面的例子是把文件夹改成屎黄色</p>
+      <pre class="layui-code" lay-title="CSS" lay-skin="notepad">
+body .layui-tree-skin-shihuang .layui-tree-branch{color: #EDCA50;}     
+      </pre>
+    </div>
+    
+    <div class="site-title">
+      <a name="other"></a>
+      <fieldset><legend>其它支持</legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>事实上我们原本在v1的计划中就把<a>check</a>（checkbox、radio）选择框、<a>drag</a>（节点拖拽）通通都加上。但显然我们还不能把过多的时间放在这些我们暂时认为无关紧要的地方，我们现在有太多太多更重要的事情要做。请务必相信，随着layui的不断完善，她的每一个组件，都会尽可能地做到完美。</p>
+    </div>
+    
+    <div class="layui-elem-quote">
+  <p>Layui - 用心与你沟通</p>
+</div>
+    
+  </div>
+</div>
+  
+<div class="layui-footer footer footer-doc">
+  <div class="layui-main">
+    <p>2017 &copy; <a href="../../index.htm">layui.com</a> MIT license</p>
+    <p>
+      <a href="../../../fly.layui.com/jie/3147.html" target="_blank">捐赠作者</a>
+      <!--<a href="javascript:layer.msg('暂无此页');">关于我们</a>-->
+      <a href="mailto:xianxin@layui.com">合作联系</a>
+      <a href="../../../github.com/sentsin/layui/index.htm" target="_blank">Git仓库</a>
+      <a href="../../../fly.layui.com/jie/2461.html"  target="_blank">微信公众号</a>
+    </p>
+  </div>
+</div>
+
+<div class="site-tree-mobile layui-hide">
+  <i class="layui-icon">&#xe602;</i>
+</div>
+<div class="site-mobile-shade"></div>
+<script src="../../../layui/layui.js" charset="utf-8"></script>
+
+<script>
+//Demo
+layui.use('tree', function(){
+  var $ = layui.jquery; 
+  
+  layui.tree({
+    elem: '#demo1' //传入元素选择器
+    ,nodes: [{ //节点
+      name: '父节点1'
+      ,children: [{
+        name: '子节点11'
+      },{
+        name: '子节点12'
+      }]
+    },{
+      name: '父节点2（可以单击左侧箭头，也可以双击标题）'
+      ,children: [{
+        name: '子节点21'
+        ,children: [{
+          name: '子节点211'
+        }]
+      }]
+    }]
+  });
+  
+  layui.tree({
+    elem: '#demo2' //指定元素
+    ,target: '_blank' //是否新选项卡打开（比如节点返回href才有效）
+    ,click: function(item){ //点击节点回调
+      $('#demo2-view').html('当前节名称：'+ item.name + '<br>全部参数：'+ JSON.stringify(item));
+    }
+    ,nodes: [ //节点
+      {
+        name: '常用文件夹'
+        ,id: 1
+        ,alias: 'changyong'
+        ,children: [
+          {
+            name: '所有未读（设置跳转）'
+            ,id: 11
+            ,href: '../../index.htm'/*tpa=http://www.layui.com/*/
+            ,alias: 'weidu'
+          }, {
+            name: '置顶邮件'
+            ,id: 12
+          }, {
+            name: '标签邮件'
+            ,id: 13
+          }
+        ]
+      }, {
+        name: '我的邮箱'
+        ,id: 2
+        ,spread: true
+        ,children: [
+          {
+            name: 'QQ邮箱'
+            ,id: 21
+            ,spread: true
+            ,children: [
+              {
+                name: '收件箱'
+                ,id: 211
+                ,children: [
+                  {
+                    name: '所有未读'
+                    ,id: 2111
+                  }, {
+                    name: '置顶邮件'
+                    ,id: 2112
+                  }, {
+                    name: '标签邮件'
+                    ,id: 2113
+                  }
+                ]
+              }, {
+                name: '已发出的邮件'
+                ,id: 212
+              }, {
+                name: '垃圾邮件'
+                ,id: 213
+              }
+            ]
+          }, {
+            name: '阿里云邮'
+            ,id: 22
+            ,children: [
+              {
+                name: '收件箱'
+                ,id: 221
+              }, {
+                name: '已发出的邮件'
+                ,id: 222
+              }, {
+                name: '垃圾邮件'
+                ,id: 223
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  });
+});
+</script>
+</body>
+</html>

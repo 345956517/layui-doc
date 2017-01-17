@@ -1,0 +1,517 @@
+ 
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8"utf-8">
+<title>按钮 - 页面元素 - layui</title>
+<meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  
+  <link rel="stylesheet" href="../../../layui/css/layui.css"   media="all">
+  <link rel="stylesheet" href="../../../css/Global.css"  media="all">
+  
+</head>
+<body>
+<div class="layui-header header header-doc">
+  <div class="layui-main">
+    <a class="logo" href="../../index.htm">
+      <img src="../../../res.layui.com/images/layui/logo.png" alt="layui">
+    </a>
+    <ul class="layui-nav">
+      <li class="layui-nav-item layui-this">
+        <a href="../index.htm" >文档</a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="../../demo/index.htm">演示</a>
+      </li>
+      
+      <li class="layui-nav-item">
+        <a href="../../../fly.layui.com/index.htm"  target="_blank">社区</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<ul class="site-dir">
+  <li><a href="#use"><cite>用法</cite></a></li>
+  <li><a href="#theme"><cite>按钮主题</cite></a></li>
+  <li><a href="#size"><cite>按钮尺寸</cite></a></li>
+  <li><a href="#radius"><cite>圆角按钮</cite></a></li>
+  <li><a href="#icon"><cite>图标按钮</cite></a></li>
+</ul>
+<div class="layui-main site-inline">
+  <div class="site-tree">
+  <ul class="layui-tree">
+  
+    <li><h2>基础说明</h2></li>
+  
+    <li class="site-tree-noicon ">
+      <a href="../index.htm" ><cite>开始使用</cite></a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/infrastructure.html" >
+        <cite>底层支撑</cite>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/element.html" >
+        <cite>页面元素</cite>
+        <em>规范 / 公共类、属性</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/modules.html" >
+        <cite>组件规范</cite>
+        <em>使用 / 模块扩展</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/faq.html">
+        <cite>常见问题</cite>
+      </a>
+    </li>
+    
+    <li><h2>页面元素</h2></li>
+    
+    
+    
+    <li class="site-tree-noicon ">
+      <a href="color.html">
+        <cite>颜色</cite>
+        <em>内置的色值参考</em>
+      </a>
+    </li>
+    
+    <li class="site-tree-noicon ">
+      <a href="icon.html">
+        <cite>图标</cite>
+        <em>字体图标</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="auxiliar.html">
+        <cite>辅助</cite>
+        <em>引用 / 分块 / 横线…</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon layui-this">
+      <a href="button.html" >
+        <cite>按钮</cite>
+        <em>button组</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="form.html">
+        <cite>表单</cite>
+        <em>form元素集合</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="nav.html">
+        <cite>导航</cite>
+        <em>菜单 / Tab / 面包屑 …</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="table.html">
+        <cite>表格</cite>
+        <em>table - v1.0.5 新增</em>
+      </a>
+    </li>
+   
+    
+    <li><h2>内置组件</h2></li>
+    
+    <li >
+      <a href="../modules/layer.html">
+        <i class="layui-icon" style="top: 3px;">&#xe638;</i><cite>弹出层</cite>
+        <em>layer</em>
+      </a>
+    </li>
+    <li >
+      <a href="../modules/layim.html">
+        <i class="layui-icon" style="position: relative; top: 3px;">&#xe63a;</i>
+        <cite>即时通讯</cite>
+        <em>layim</em>
+      </a>
+    </li>
+    <li >
+      <a href="../modules/laydate.html">
+        <i class="layui-icon" style="top: 1px;">&#xe637;</i><cite>日期时间选择</cite>
+        <em>laydate</em>
+      </a>
+    </li>
+    <li >
+      <a href="../modules/laypage.html">
+        <i class="layui-icon">&#xe633;</i><cite>分页</cite>
+        <em>laypage</em>
+      </a>
+    </li>
+    <li >
+      <a href="../modules/laytpl.html">
+        <i class="layui-icon">&#xe628;</i><cite>模板引擎</cite>
+        <em>laytpl</em>
+      </a>
+    </li>
+    <li >
+      <a href="../modules/layedit.html">
+        <i class="layui-icon">&#xe639;</i>
+        <cite>富文本编辑器</cite>
+        <em>layedit</em>
+      </a>
+    </li>
+    <li >
+      <a href="../modules/form.html">
+        <i class="layui-icon" style="top: 2px;">&#xe63c;</i>
+        <cite>表单</cite>
+        <em>form</em>
+      </a>
+    </li>
+    <li >
+      <a href="../modules/upload.html">
+        <i class="layui-icon">&#xe62f;</i>
+        <cite>文件上传</cite>
+        <em>upload</em>
+      </a>
+    </li>
+    <li >
+      <a href="../modules/element.html">
+        <i class="layui-icon" style="top: 1px; font-size: 18px;">&#xe62a;</i>
+        <cite>常用元素操作</cite>
+        <em>element</em>
+      </a>
+    </li>
+    <li >
+      <a href="../modules/tree.html">
+        <i class="layui-icon">&#xe62e;</i>
+        <cite>树形菜单</cite>
+        <em>tree</em>
+      </a>
+    </li>
+    
+    <li >
+      <a href="../modules/util.html">
+        <i class="layui-icon">&#xe631;</i>
+        <cite>工具块</cite>
+        <em>util</em>
+      </a>
+    </li>
+    <li >
+      <a href="../modules/flow.html">
+        <i class="layui-icon">&#xe636;</i>
+        <cite>流加载</cite>
+        <em>flow</em>
+      </a>
+    </li>
+    <li >
+      <a href="../modules/code.html">
+        <i class="layui-icon" style="top: 1px;">&#xe635;</i>
+        <cite>代码修饰器</cite>
+        <em>code</em>
+      </a>
+    </li>
+  </ul>
+</div>
+
+  <div class="site-content">
+    <h1 class="site-h1">按钮 - 页面元素</h1>
+    <div class="site-tips site-text">
+      <p>向任意HTML元素设定<em>class="layui-btn"</em>，建立一个基础按钮。通过追加格式为<em>layui-btn-{type}</em>的class来定义其它按钮风格。内置的按钮class可以进行任意组合，从而形成更多种按钮风格。</p>
+    </div>
+    
+    
+<div style="margin: 15px 0; text-align: center; background-color: #F2F2F2;">
+  <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6111334333458862" data-ad-slot="9841027833"></ins>
+</div>
+
+    
+    <div class="site-title">
+      <fieldset><legend><a name="use">用法</a></legend></fieldset>
+    </div>
+    <div class="site-text">
+      <pre class="layui-code">
+&lt;button class="layui-btn">一个标准的按钮&lt;/button>
+&lt;a href="http://www.layui.com" class="layui-btn">一个可跳转的按钮&lt;/a>
+      </pre>
+      <p></p>
+    </div>
+    
+    <div class="site-title">
+      <fieldset><legend><a name="theme">主题</a></legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>
+        <button class="layui-btn layui-btn-primary">原始按钮</button>
+        <button class="layui-btn">默认按钮</button>
+        <button class="layui-btn layui-btn-normal">百搭按钮</button>
+        <button class="layui-btn layui-btn-warm">暖色按钮</button>
+        <button class="layui-btn layui-btn-danger">警告按钮</button>
+        <button class="layui-btn layui-btn-disabled">禁用按钮</button>
+      </p>
+      <table class="site-table">
+        <thead>
+          <tr>
+            <th>名称</th>
+            <th>组合</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: center;">原始</td>
+            <td>class="layui-btn layui-btn-primary"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">默认</td>
+            <td>class="layui-btn"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">百搭</td>
+            <td>class="layui-btn layui-btn-normal"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">暖色</td>
+            <td>class="layui-btn layui-btn-warm"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">警告</td>
+            <td>class="layui-btn layui-btn-danger"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">禁用</td>
+            <td>class="layui-btn layui-btn-disabled"</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="site-title">
+      <fieldset><legend><a name="size">尺寸</a></legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>
+        <button class="layui-btn layui-btn-big">大型按钮</button>
+        <button class="layui-btn">默认按钮</button>
+        <button class="layui-btn layui-btn-small">小型按钮</button>
+        <button class="layui-btn layui-btn-mini">迷你按钮</button>
+      </p>
+      <table class="site-table">
+        <thead>
+          <tr>
+            <th>尺寸</th>
+            <th>组合</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: center;">大型</td>
+            <td>class="layui-btn layui-btn-big"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">默认</td>
+            <td>class="layui-btn"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">小型</td>
+            <td>class="layui-btn layui-btn-small"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">迷你</td>
+            <td>class="layui-btn layui-btn-mini"</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <button class="layui-btn layui-btn-big layui-btn-normal">大型百搭</button>
+        <button class="layui-btn layui-btn-warm">正常暖色</button>
+        <button class="layui-btn layui-btn-small layui-btn-danger">小型警告</button>
+        <button class="layui-btn layui-btn-mini layui-btn-disabled">禁用</button>
+      </p>
+      <table class="site-table">
+        <thead>
+          <tr>
+            <th>尺寸</th>
+            <th>组合</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: center;">大型百搭</td>
+            <td>class="layui-btn layui-btn-big layui-btn-normal"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">正常暖色</td>
+            <td>class="layui-btn layui-btn-warm"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">小型警告</td>
+            <td>class="layui-btn layui-btn-small layui-btn-danger"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">迷你禁用</td>
+            <td>class="layui-btn layui-btn-mini layui-btn-disabled"</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <div class="site-title">
+      <fieldset><legend><a name="radius">圆角</a></legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>
+        <button class="layui-btn layui-btn-radius layui-btn-primary">原始按钮</button>
+        <button class="layui-btn layui-btn-radius">默认按钮</button>
+        <button class="layui-btn layui-btn-radius layui-btn-normal">百搭按钮</button>
+        <button class="layui-btn layui-btn-radius layui-btn-warm">暖色按钮</button>
+        <button class="layui-btn layui-btn-radius layui-btn-danger">警告按钮</button>
+        <button class="layui-btn layui-btn-radius layui-btn-disabled">禁用按钮</button>
+      </p>
+      <table class="site-table">
+        <thead>
+          <tr>
+            <th>主题</th>
+            <th>组合</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: center;">原始</td>
+            <td>class="layui-btn layui-btn-radius layui-btn-primary"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">默认</td>
+            <td>class="layui-btn layui-btn-radius"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">百搭</td>
+            <td>class="layui-btn layui-btn-radius layui-btn-normal"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">暖色</td>
+            <td>class="layui-btn layui-btn-radius layui-btn-warm"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">警告</td>
+            <td>class="layui-btn layui-btn-radius layui-btn-danger"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">禁用</td>
+            <td>class="layui-btn layui-btn-radius layui-btn-disabled"</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <button class="layui-btn layui-btn-big layui-btn-radius layui-btn-normal">大型百搭</button>
+        <button class="layui-btn layui-btn-small layui-btn-radius layui-btn-danger">小型警告</button>
+        <button class="layui-btn layui-btn-mini layui-btn-radius layui-btn-disabled">迷你禁用</button>
+      </p>
+      <table class="site-table">
+        <thead>
+          <tr>
+            <th>尺寸</th>
+            <th>组合</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: center;">大型百搭</td>
+            <td>class="layui-btn layui-btn-big layui-btn-radius layui-btn-normal"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">小型警告</td>
+            <td>class="layui-btn layui-btn-small layui-btn-radius layui-btn-danger"</td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">迷你禁用</td>
+            <td>class="layui-btn layui-btn-mini layui-btn-radius layui-btn-disabled"</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="layui-word-aux">
+        哈哈哈哈哈，这组合名长得简直没朋友~ 
+        <img src="../../../res.layui.com/layui/build/images/face/2.gif" >
+        <img src="../../../res.layui.com/layui/build/images/face/38.gif" >
+      </p>
+    </div>
+      
+    <div class="site-title">
+      <fieldset><legend><a name="icon">图标</a></legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>
+        <button class="layui-btn"><i class="layui-icon">&#xe608;</i> 添加</button>
+        <button class="layui-btn"><i class="layui-icon">&#x1002;</i></button>
+        <button class="layui-btn"><i class="layui-icon">&#xe603;</i></button>
+        <button class="layui-btn"><i class="layui-icon">&#xe602;</i></button>
+        <button class="layui-btn"><i class="layui-icon">&#xe642;</i></button>
+        <button class="layui-btn"><i class="layui-icon">&#xe640;</i></button>
+        <button class="layui-btn"><i class="layui-icon">&#xe641;</i></button>
+      </p>
+      <p>
+        <button class="layui-btn layui-btn-small layui-btn-primary"><i class="layui-icon">&#x1002;</i></button>
+        <button class="layui-btn layui-btn-small layui-btn-primary"><i class="layui-icon">&#xe603;</i></button>
+        <button class="layui-btn layui-btn-small layui-btn-primary"><i class="layui-icon">&#xe602;</i></button>
+        <button class="layui-btn layui-btn-small layui-btn-primary"><i class="layui-icon">&#xe642;</i></button>
+        <button class="layui-btn layui-btn-small layui-btn-primary"><i class="layui-icon">&#xe640;</i></button>
+        <button class="layui-btn layui-btn-small layui-btn-primary"><i class="layui-icon">&#xe641;</i></button>
+        
+        <button class="layui-btn layui-btn-small"><i class="layui-icon">&#x1002;</i></button>
+        <button class="layui-btn layui-btn-small layui-btn-normal"><i class="layui-icon">&#xe603;</i></button>
+        <button class="layui-btn layui-btn-small layui-btn-warm"><i class="layui-icon">&#xe602;</i></button>
+        <button class="layui-btn layui-btn-small layui-btn-danger"><i class="layui-icon">&#xe642;</i></button>
+        <button class="layui-btn layui-btn-small layui-btn-disabled"><i class="layui-icon">&#xe640;</i></button>
+      </p>
+      
+      <pre class="layui-code" lay-title="结构">
+&lt;button class="layui-btn">
+  &lt;i class="layui-icon"><i>&</i>#xe608;&lt;/i> 添加
+&lt;/button>
+ 
+&lt;button class="layui-btn layui-btn-small layui-btn-primary">
+  &lt;i class="layui-icon"><i>&</i>#x1002;&lt;/i>
+&lt;/button>
+      </pre>
+      <p class="layui-word-aux">温馨提示：各种图标字体请移步文档左侧【页面元素 - 图标】阅览</p>
+    </div>
+ 
+    
+    <div class="site-title">
+      <fieldset><legend><a name="other">结语</a></legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>你是否发现，主题、尺寸、图标、圆角的交叉组合，可以形成难以计算的按钮种类。另外，你可能最关注的是配色，Layui内置的六种主题的按钮颜色都是业界常用的标准配色，如果他们仍然无法与你的网站契合，那么请先允许我“噗”一声。。。然后你就大胆地自撸一个颜色吧！比如：<i style="color: #E46AA3;">粉红色</i>或者<i style="color: #A67727;">菊花色</i>（一个有味道的颜色）</p>
+    </div>
+    
+    <div class="layui-elem-quote">
+  <p>Layui - 用心与你沟通</p>
+</div>
+    
+  </div>
+</div>
+  
+<div class="layui-footer footer footer-doc">
+  <div class="layui-main">
+    <p>2017 &copy; <a href="../../index.htm">layui.com</a> MIT license</p>
+    <p>
+      <a href="../../../fly.layui.com/jie/3147.html" target="_blank">捐赠作者</a>
+      <!--<a href="javascript:layer.msg('暂无此页');">关于我们</a>-->
+      <a href="mailto:xianxin@layui.com">合作联系</a>
+      <a href="../../../github.com/sentsin/layui/index.htm" target="_blank">Git仓库</a>
+      <a href="../../../fly.layui.com/jie/2461.html"  target="_blank">微信公众号</a>
+    </p>
+  </div>
+</div>
+
+<div class="site-tree-mobile layui-hide">
+  <i class="layui-icon">&#xe602;</i>
+</div>
+<div class="site-mobile-shade"></div>
+<script src="../../../layui/layui.js" charset="utf-8"></script>
+<script src="../../Js/doc.js" type="text/javascript"></script>
+
+</body>
+</html>

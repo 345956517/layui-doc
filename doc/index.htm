@@ -1,0 +1,411 @@
+ 
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8"utf-8">
+<title>开发使用文档 - layui</title>
+<meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  
+  <link rel="stylesheet" href="../../layui/css/layui.css"   media="all">
+  <link rel="stylesheet" href="../../css/Global.css"  media="all">
+  
+</head>
+<body>
+<div class="layui-header header header-doc">
+  <div class="layui-main">
+    <a class="logo" href="../index.htm">
+      <img src="../../res.layui.com/images/layui/logo.png" alt="layui">
+    </a>
+    <ul class="layui-nav">
+      <li class="layui-nav-item layui-this">
+        <a href="index.htm" >文档</a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="../demo/index.htm">演示</a>
+      </li>
+      
+      <li class="layui-nav-item">
+        <a href="../../fly.layui.com/index.htm"  target="_blank">社区</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<ul class="site-dir">
+  <li><a href="#get"><cite>获得 Layui</cite></a></li>
+  <li><a href="#classical"><cite>经典，因返璞归真</cite></a></li>
+  <li><a href="#quickstart"><cite>快速上手</cite></a></li>
+  <li><a href="#recommend"><cite>规范化的用法</cite></a></li>
+  <li><a href="#simple"><cite>简单粗暴的用法</cite></a></li>
+</ul>
+<div class="layui-main site-inline">
+  <div class="site-tree">
+  <ul class="layui-tree">
+  
+    <li><h2>基础说明</h2></li>
+  
+    <li class="site-tree-noicon layui-this">
+      <a href="index.htm" ><cite>开始使用</cite></a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="base/infrastructure.html" >
+        <cite>底层支撑</cite>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="base/element.html" >
+        <cite>页面元素</cite>
+        <em>规范 / 公共类、属性</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="base/modules.html" >
+        <cite>组件规范</cite>
+        <em>使用 / 模块扩展</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="base/faq.html">
+        <cite>常见问题</cite>
+      </a>
+    </li>
+    
+    <li><h2>页面元素</h2></li>
+    
+    
+    
+    <li class="site-tree-noicon ">
+      <a href="element/color.html">
+        <cite>颜色</cite>
+        <em>内置的色值参考</em>
+      </a>
+    </li>
+    
+    <li class="site-tree-noicon ">
+      <a href="element/icon.html">
+        <cite>图标</cite>
+        <em>字体图标</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="element/auxiliar.html">
+        <cite>辅助</cite>
+        <em>引用 / 分块 / 横线…</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="element/button.html" >
+        <cite>按钮</cite>
+        <em>button组</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="element/form.html">
+        <cite>表单</cite>
+        <em>form元素集合</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="element/nav.html">
+        <cite>导航</cite>
+        <em>菜单 / Tab / 面包屑 …</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="element/table.html">
+        <cite>表格</cite>
+        <em>table - v1.0.5 新增</em>
+      </a>
+    </li>
+   
+    
+    <li><h2>内置组件</h2></li>
+    
+    <li >
+      <a href="modules/layer.html">
+        <i class="layui-icon" style="top: 3px;">&#xe638;</i><cite>弹出层</cite>
+        <em>layer</em>
+      </a>
+    </li>
+    <li >
+      <a href="modules/layim.html">
+        <i class="layui-icon" style="position: relative; top: 3px;">&#xe63a;</i>
+        <cite>即时通讯</cite>
+        <em>layim</em>
+      </a>
+    </li>
+    <li >
+      <a href="modules/laydate.html">
+        <i class="layui-icon" style="top: 1px;">&#xe637;</i><cite>日期时间选择</cite>
+        <em>laydate</em>
+      </a>
+    </li>
+    <li >
+      <a href="modules/laypage.html">
+        <i class="layui-icon">&#xe633;</i><cite>分页</cite>
+        <em>laypage</em>
+      </a>
+    </li>
+    <li >
+      <a href="modules/laytpl.html">
+        <i class="layui-icon">&#xe628;</i><cite>模板引擎</cite>
+        <em>laytpl</em>
+      </a>
+    </li>
+    <li >
+      <a href="modules/layedit.html">
+        <i class="layui-icon">&#xe639;</i>
+        <cite>富文本编辑器</cite>
+        <em>layedit</em>
+      </a>
+    </li>
+    <li >
+      <a href="modules/form.html">
+        <i class="layui-icon" style="top: 2px;">&#xe63c;</i>
+        <cite>表单</cite>
+        <em>form</em>
+      </a>
+    </li>
+    <li >
+      <a href="modules/upload.html">
+        <i class="layui-icon">&#xe62f;</i>
+        <cite>文件上传</cite>
+        <em>upload</em>
+      </a>
+    </li>
+    <li >
+      <a href="modules/element.html">
+        <i class="layui-icon" style="top: 1px; font-size: 18px;">&#xe62a;</i>
+        <cite>常用元素操作</cite>
+        <em>element</em>
+      </a>
+    </li>
+    <li >
+      <a href="modules/tree.html">
+        <i class="layui-icon">&#xe62e;</i>
+        <cite>树形菜单</cite>
+        <em>tree</em>
+      </a>
+    </li>
+    
+    <li >
+      <a href="modules/util.html">
+        <i class="layui-icon">&#xe631;</i>
+        <cite>工具块</cite>
+        <em>util</em>
+      </a>
+    </li>
+    <li >
+      <a href="modules/flow.html">
+        <i class="layui-icon">&#xe636;</i>
+        <cite>流加载</cite>
+        <em>flow</em>
+      </a>
+    </li>
+    <li >
+      <a href="modules/code.html">
+        <i class="layui-icon" style="top: 1px;">&#xe635;</i>
+        <cite>代码修饰器</cite>
+        <em>code</em>
+      </a>
+    </li>
+  </ul>
+</div>
+
+  <div class="site-content">
+    <h1 class="site-h1">开始使用</h1>
+    <blockquote class="site-tips site-text">
+      Layui 出蛋于2016年金秋，是一款带着浓烈情怀的国产前端UI框架，她追求极简，又不失丰盈的内在，说她是史上最轻量的结晶，似乎并不为过。一切都源自于她对原生态的执着，对前端社区的那些噪杂声音的过滤，以及她本身的精心雕琢。
+    </blockquote>
+    <p style="margin-bottom: 20px; text-align: center">
+      <img src="../../res.layui.com/images/layui/logo-2.png" >
+    </p>
+    <blockquote class="site-tips site-text" style="text-align: center">
+      Layui兼容除IE6/7以外的全部浏览器，并且绝大多数结构支持响应式
+    </blockquote>
+    
+    
+<div style="margin: 15px 0; text-align: center; background-color: #F2F2F2;">
+  <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6111334333458862" data-ad-slot="9841027833"></ins>
+</div>
+
+    
+    <fieldset class="layui-elem-field layui-field-title site-title">
+      <legend><a name="get">获得 Layui</a></legend>
+    </fieldset>
+    <div class="site-text">
+      <p>你可以在官网首页下载到 Layui 的最新版，也可以通过 <a href="../../github.com/sentsin/layui/index.htm" target="_blank">GitHub</a> 得到Layui的开源包。目前我们只同步维护这两处资源渠道。一般如果你是用于实际项目，我们推荐你直接从官网下载。layui构建后的结构（也就是你获得的包）如下：</p>
+      <pre class="layui-code">
+    ├─css //css目录
+    │  └─modules //模块css目录（一般如果模块相对较大，我们会单独提取）
+    │      ├─laydate
+    │      ├─layer
+    │      │  └─default
+    │      └─layim
+    │          └─skin
+    ├─font  //字体图标目录
+    ├─images //图片资源目录（一些表情等）
+    │  └─face
+    └─lay //JS目录
+        ├─dest //经过合并的完整模块
+        └─modules //各模块/组件
+      </pre>
+      <p>
+        
+      </p>
+    </div>
+    
+    <fieldset class="layui-elem-field layui-field-title site-title">
+      <legend><a name="classical">经典，因返璞归真</a></legend>
+    </fieldset>
+    <div class="site-text">
+      <p>近几年，尤其是今年，常常会听到猿们吐槽“<em>现在想简简单单的写个前端怎么就变得这么难呢？</em>”。的确，前端目前正处于一个超出常理，且疯狂造轮子的黄金时代，标准化的逐步设想与浏览器本身的现状所形成的滞后感，让一些尚未得到官方推广的方案开始引领着前端社区，那仿佛是一场“<em>五代十国</em>”般的颠覆，这期间，你看不到一个所谓的新鲜轮子可以维持超过三年的光环，因为它很快就会被另一个新轮子所替代。你必须保持对技术的高度狂热，透过未来的枷锁去追逐那些层出不穷的，工具！是的，他们只是工具，准确地说是一种标准化最终形成的过度！</p>
+      <p>透过那些高逼格工具的本质，最终仍然是 HTML、CSS、JavaScript 三驾马车的真实面貌。与工具不同的是，它们是最终标准的归属者。所以工具在发展，三驾马车本身同样也在高速发展，那既然如此，我们为何不能跟随原生态的稳健脚步，安安静静地撸会码呢？</p>
+      <p>Layui 定义为“经典模块化”，并非是自吹她自身有多优秀，而是绕开JS社区的喧嚣，以最简单的方式去诠释高效！<em>她的所谓经典，是在于对返璞归真的执念</em>，她以当前浏览器普通认可的方式去组织模块！我们认为，这恰是符合当下国内绝大多数程序员从旧时代过度到未来新标准的最佳指引。</p>
+      <p>所以 Layui 本身也并不是完全遵循于AMD时代，准确地说，她试图建立自己的模式，所以你会看到：</p>
+      <pre class="layui-code">
+//layui模块的定义
+layui.define([mods], function(exports){
+  
+  //……
+  
+  exports('mod', api);
+});  
+ 
+//layui模块的使用
+layui.use(['mod1', 'mod2'], function(args){
+  var mod = layui.mod1;
+  
+  //……
+  
+});    
+      </pre>
+      <p>没错，她具备AMD的影子，又并非受限于commonjs的那些条条框框，Layui认为这种轻量的组织方式，比WebPack更符合绝大多数场景。所以她坚持采用经典模块化，也正是能让人避开工具的复杂配置，回归简单，安静高效地撸一会原生态的HTML、CSS、JavaScript。</p>
+      
+      <p>但是 Layui 又并非是Requirejs那样的模块加载器，而是一款UI解决方案，她与Bootstrap最大的不同恰恰在于她糅合了自身对经典模块化的理解。</p>
+    </div>
+    
+    <fieldset class="layui-elem-field layui-field-title site-title">
+      <legend><a name="quickstart">快速上手</a></legend>
+    </fieldset>
+    <div class="site-text">
+      <p>获得layui后，将其完整地部署到你的项目目录（或静态资源服务器），你只需要引入下述两个文件：</p>
+      <pre class="layui-code">
+./layui/css/layui.css
+./layui/layui.js
+      </pre>
+      <p>没错，不用去管其它任何文件。因为他们（比如各模块）都是在最终使用的时候才会自动加载。这是一个基本的入门页面：</p>
+      <pre class="layui-code">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"&gt;
+  &lt;title>开始使用Layui&lt;/title&gt;
+  &lt;link rel="stylesheet" href="../layui/css/layui.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ 
+&lt;!-- 你的HTML代码 --&gt;
+ 
+&lt;script src="../layui/layui.js">&lt;/script&gt;
+&lt;script&gt;
+ 
+//一般直接写在一个js文件中
+layui.use(['layer', 'form'], function(){
+  var layer = layui.layer
+  ,form = layui.form();
+  
+  layer.msg('Hello World');
+});
+&lt;/script&gt; 
+  
+&lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+    </div>
+      
+      
+    <fieldset class="layui-elem-field layui-field-title site-title">
+      <legend><a name="recommend">规范化的用法（推荐）</a></legend>
+    </fieldset>
+    <div class="site-text">  
+      <p>如果你想快速使用Layui的组件，你还是跟平时一样script标签引入你的js文件，然后在你的js文件中使用layui的组件。但我们更推荐你遵循Layui的模块规范，建立一个自己的模块作为入口：</p>
+      
+      <pre class="layui-code">
+&lt;script&gt;
+layui.config({
+  base: '/res/js/modules/' //你的模块目录
+}).use('index'); //加载入口
+&lt;/script&gt;    
+    </pre>
+    上述的 index 即为你 /res/js/modules/ 目录下的 index.js，它的内容应该如下：
+    <pre class="layui-code">
+/**
+  项目JS主入口
+  以依赖Layui的layer和form模块为例
+**/    
+layui.define(['layer', 'form'], function(exports){
+  var layer = layui.layer
+  ,form = layui.form();
+  
+  layer.msg('Hello World');
+  
+  exports('index', {}); //注意，这里是模块输出的核心，模块名必须和use时的模块名一致
+});    
+      </pre>
+    </div>
+    
+    <fieldset class="layui-elem-field layui-field-title site-title">
+      <legend><a name="simple">简单粗暴用法</a></legend>
+    </fieldset> 
+    <div class="site-text">  
+      <p>如果你觉得Layui的模块化还是有点啰嗦，木有关系的亲。Layui考虑到了像你一样的猿群，我们将layui.js及所有模块单独打包合并成了一个完整的js文件，用的时候直接引入这一个文件即可。当你采用这样的方式，<span style="color: #FF5722;">你无需再通过layui.use加载模块</span>，直接使用即可，如：</p>
+      <pre class="layui-code">
+&lt;script src="../layui/lay/dest/layui.all.js">&lt;/script>  
+&lt;script>
+;!function(){
+  //当使用了 layui.all.js，无需再执行layui.use()方法
+  var from = layui.form()
+  ,layer = layui.layer;
+  
+  //…
+}();
+&lt;/script> 
+      </pre>
+      <p>但你必须知道，这种使用方式，意味着Layui的模块化已经失去了它的意义。但不可否认，它比什么都来的简单。</p>
+      
+      <blockquote class="layui-elem-quote layui-quote-nm">好了，不管你采用什么样的方式，从现在开始，尽情地使用Layui吧！但愿这是一段美妙的旅程。</blockquote>
+    </div>
+    
+    <div class="layui-elem-quote">
+  <p>Layui - 用心与你沟通</p>
+</div>
+  </div>
+</div>
+  
+<div class="layui-footer footer footer-doc">
+  <div class="layui-main">
+    <p>2017 &copy; <a href="../index.htm">layui.com</a> MIT license</p>
+    <p>
+      <a href="../../fly.layui.com/jie/3147.html" target="_blank">捐赠作者</a>
+      <!--<a href="javascript:layer.msg('暂无此页');">关于我们</a>-->
+      <a href="mailto:xianxin@layui.com">合作联系</a>
+      <a href="../../github.com/sentsin/layui/index.htm" target="_blank">Git仓库</a>
+      <a href="../../fly.layui.com/jie/2461.html"  target="_blank">微信公众号</a>
+    </p>
+  </div>
+</div>
+
+<div class="site-tree-mobile layui-hide">
+  <i class="layui-icon">&#xe602;</i>
+</div>
+<div class="site-mobile-shade"></div>
+<script src="../../layui/layui.js" charset="utf-8"></script>
+</body>
+</html>

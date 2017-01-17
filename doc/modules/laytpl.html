@@ -1,0 +1,354 @@
+ 
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8"utf-8">
+<title>模板引擎文档 - layui</title>
+<meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  
+  <link rel="stylesheet" href="../../../layui/css/layui.css"   media="all">
+  <link rel="stylesheet" href="../../../css/Global.css"  media="all">
+  
+</head>
+<body>
+<div class="layui-header header header-doc">
+  <div class="layui-main">
+    <a class="logo" href="../../index.htm">
+      <img src="../../../res.layui.com/images/layui/logo.png" alt="layui">
+    </a>
+    <ul class="layui-nav">
+      <li class="layui-nav-item layui-this">
+        <a href="../index.htm" >文档</a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="../../demo/index.htm">演示</a>
+      </li>
+      
+      <li class="layui-nav-item">
+        <a href="../../../fly.layui.com/index.htm"  target="_blank">社区</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- <ul class="site-dir">
+  <li><a href="#use"><cite>使用</cite></a></li>
+</ul> -->
+<div class="layui-main site-inline">
+  <div class="site-tree">
+  <ul class="layui-tree">
+  
+    <li><h2>基础说明</h2></li>
+  
+    <li class="site-tree-noicon ">
+      <a href="../index.htm" ><cite>开始使用</cite></a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/infrastructure.html" >
+        <cite>底层支撑</cite>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/element.html" >
+        <cite>页面元素</cite>
+        <em>规范 / 公共类、属性</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/modules.html" >
+        <cite>组件规范</cite>
+        <em>使用 / 模块扩展</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/faq.html">
+        <cite>常见问题</cite>
+      </a>
+    </li>
+    
+    <li><h2>页面元素</h2></li>
+    
+    
+    
+    <li class="site-tree-noicon ">
+      <a href="../element/color.html">
+        <cite>颜色</cite>
+        <em>内置的色值参考</em>
+      </a>
+    </li>
+    
+    <li class="site-tree-noicon ">
+      <a href="../element/icon.html">
+        <cite>图标</cite>
+        <em>字体图标</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/auxiliar.html">
+        <cite>辅助</cite>
+        <em>引用 / 分块 / 横线…</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/button.html" >
+        <cite>按钮</cite>
+        <em>button组</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/form.html">
+        <cite>表单</cite>
+        <em>form元素集合</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/nav.html">
+        <cite>导航</cite>
+        <em>菜单 / Tab / 面包屑 …</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/table.html">
+        <cite>表格</cite>
+        <em>table - v1.0.5 新增</em>
+      </a>
+    </li>
+   
+    
+    <li><h2>内置组件</h2></li>
+    
+    <li >
+      <a href="layer.html">
+        <i class="layui-icon" style="top: 3px;">&#xe638;</i><cite>弹出层</cite>
+        <em>layer</em>
+      </a>
+    </li>
+    <li >
+      <a href="layim.html">
+        <i class="layui-icon" style="position: relative; top: 3px;">&#xe63a;</i>
+        <cite>即时通讯</cite>
+        <em>layim</em>
+      </a>
+    </li>
+    <li >
+      <a href="laydate.html">
+        <i class="layui-icon" style="top: 1px;">&#xe637;</i><cite>日期时间选择</cite>
+        <em>laydate</em>
+      </a>
+    </li>
+    <li >
+      <a href="laypage.html">
+        <i class="layui-icon">&#xe633;</i><cite>分页</cite>
+        <em>laypage</em>
+      </a>
+    </li>
+    <li class="layui-this">
+      <a href="laytpl.html">
+        <i class="layui-icon">&#xe628;</i><cite>模板引擎</cite>
+        <em>laytpl</em>
+      </a>
+    </li>
+    <li >
+      <a href="layedit.html">
+        <i class="layui-icon">&#xe639;</i>
+        <cite>富文本编辑器</cite>
+        <em>layedit</em>
+      </a>
+    </li>
+    <li >
+      <a href="form.html">
+        <i class="layui-icon" style="top: 2px;">&#xe63c;</i>
+        <cite>表单</cite>
+        <em>form</em>
+      </a>
+    </li>
+    <li >
+      <a href="upload.html">
+        <i class="layui-icon">&#xe62f;</i>
+        <cite>文件上传</cite>
+        <em>upload</em>
+      </a>
+    </li>
+    <li >
+      <a href="element.html">
+        <i class="layui-icon" style="top: 1px; font-size: 18px;">&#xe62a;</i>
+        <cite>常用元素操作</cite>
+        <em>element</em>
+      </a>
+    </li>
+    <li >
+      <a href="tree.html">
+        <i class="layui-icon">&#xe62e;</i>
+        <cite>树形菜单</cite>
+        <em>tree</em>
+      </a>
+    </li>
+    
+    <li >
+      <a href="util.html">
+        <i class="layui-icon">&#xe631;</i>
+        <cite>工具块</cite>
+        <em>util</em>
+      </a>
+    </li>
+    <li >
+      <a href="flow.html">
+        <i class="layui-icon">&#xe636;</i>
+        <cite>流加载</cite>
+        <em>flow</em>
+      </a>
+    </li>
+    <li >
+      <a href="code.html">
+        <i class="layui-icon" style="top: 1px;">&#xe635;</i>
+        <cite>代码修饰器</cite>
+        <em>code</em>
+      </a>
+    </li>
+  </ul>
+</div>
+
+  <div class="site-content">
+    <h1 class="site-h1"><i class="layui-icon">&#xe628;</i>模板引擎文档 - layui.laytpl</h1>
+    <div class="site-tips site-text">
+      <p>同样早在2014年就已经推出，在字符解析上有着比较出色的表现，欠缺之处在于异常调试上。由于传统意义的前端模板引擎已经变得不再流行，<em>所以laytpl后续可能会进行重写</em>，目前方向暂时还没有想好，预计会在layui比较稳定后开始实施。</p>
+    </div>
+    <div class="site-tips site-text">
+      <p>模块加载名称：<a>laytpl</a>，在线演示：<a href="../../demo/laytpl.html"  target="_blank">http://www.layui.com/demo/laytpl.html</a></p>
+    </div>
+    
+    
+<div style="margin: 15px 0; text-align: center; background-color: #F2F2F2;">
+  <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6111334333458862" data-ad-slot="9841027833"></ins>
+</div>
+
+    
+    <div class="site-title">
+      <fieldset><legend><a name="use">使用</a></legend></fieldset>
+    </div>
+    <div class="site-text">
+      <pre class="layui-code">
+layui.use('laytpl', function(){
+  var laytpl = layui.laytpl;
+  
+  //使用方式跟独立组件完全一样
+  laytpl('{{ d.name }}是一位公猿').render({
+    name: '贤心'
+  }, function(string){
+    console.log(string); //贤心是一位公猿
+  });
+}); 
+      </pre>
+      <p>或者读取页面中的模版：</p>
+      <pre class="layui-code">
+//第一步：编写模版。你可以使用一个script标签存放模板，如：
+&lt;script id="demo" type="text/html"&gt;
+&lt;h3&gt;{{ d.title }}&lt;/h3&gt;
+&lt;ul&gt;
+{{#  layui.each(d.list, function(index, item){ }}
+  &lt;li>
+    &lt;span&gt;{{ item.modname }}&lt;/span&gt;
+    &lt;span&gt;{{ item.alias }}：&lt;/span&gt;
+    &lt;span&gt;{{ item.site || '' }}&lt;/span&gt;
+  &lt;/li&gt;
+{{#  }); }}
+ 
+{{#  if(d.list.length === 0){ }}
+  无数据
+{{#  } }} 
+&lt;/ul&gt;
+&lt;/script&gt;
+//第二步：建立视图。用于呈现渲染结果。
+&lt;div id="view"&gt;&lt;/div&gt;
+//第三步：渲染模版
+var data = {
+  "title":"Layui常用模块"
+  ,"list":[{"modname":"弹层","alias":"layer","site":"layer.layui.com"},{"modname":"表单","alias":"form"}]
+}
+var getTpl = demo.innerHTML;
+laytpl(getTpl).render(data, function(html){
+  view.innerHTML = html;
+});
+      </pre>
+    </div> 
+    
+    <div class="site-title">
+      <fieldset><legend><a name="use">模版语法</a></legend></fieldset>
+    </div>
+    <pre class="layui-code">
+ 一、模版语法
+输出一个普通字段，不转义html：   {{ d.field }}
+输出一个普通字段，并转义html：   {{= d.field }}
+逻辑处理： {{#  JavaScript 表达式 }} 
+（
+  注意:只能是表达式，不能为 {{#  fn() }} 的这样的写法，只能为：{{ fn() }} 
+  正确的写法是： 
+  {{#  if(true){ }}
+    内容：{{ fn() }}
+  {{#  } }}
+ ）
+ 
+二、内置方法
+1)：laytpl(template);   //核心函数，返回一个对象
+  
+  var tpl = laytpl(template);
+  tpl.render(data, callback);   //渲染方法，返回渲染结果，支持异步和同步两种模式
+  
+  a)：异步
+  tpl.render(data, function(result){
+    console.log(result);
+  });
+  
+  b)：同步
+  var result = tpl.render(data);
+  console.log(result);
+  
+2)：laytpl.config(options); //初始化配置，options是一个对象，如：
+laytpl.config({
+  open: '开始标签'
+  ,close: '闭合标签'
+});
+      </pre>
+ 
+    
+    <div class="site-title">
+      <fieldset><legend><a name="other">结语</a></legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>好像没什么可以总结的呢。</p>
+    </div>
+    
+    <div class="layui-elem-quote">
+  <p>Layui - 用心与你沟通</p>
+</div>
+    
+  </div>
+</div>
+  
+<div class="layui-footer footer footer-doc">
+  <div class="layui-main">
+    <p>2017 &copy; <a href="../../index.htm">layui.com</a> MIT license</p>
+    <p>
+      <a href="../../../fly.layui.com/jie/3147.html" target="_blank">捐赠作者</a>
+      <!--<a href="javascript:layer.msg('暂无此页');">关于我们</a>-->
+      <a href="mailto:xianxin@layui.com">合作联系</a>
+      <a href="../../../github.com/sentsin/layui/index.htm" target="_blank">Git仓库</a>
+      <a href="../../../fly.layui.com/jie/2461.html"  target="_blank">微信公众号</a>
+    </p>
+  </div>
+</div>
+
+<div class="site-tree-mobile layui-hide">
+  <i class="layui-icon">&#xe602;</i>
+</div>
+<div class="site-mobile-shade"></div>
+<script src="../../../layui/layui.js" charset="utf-8"></script>
+<script src="../../Js/doc.js" type="text/javascript"></script>
+
+</body>
+</html>

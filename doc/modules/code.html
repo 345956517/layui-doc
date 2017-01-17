@@ -1,0 +1,447 @@
+ 
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8"utf-8">
+<title>代码修饰器文档 - layui</title>
+<meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  
+  <link rel="stylesheet" href="../../../layui/css/layui.css"   media="all">
+  <link rel="stylesheet" href="../../../css/Global.css"  media="all">
+  
+</head>
+<body>
+<div class="layui-header header header-doc">
+  <div class="layui-main">
+    <a class="logo" href="../../index.htm">
+      <img src="../../../res.layui.com/images/layui/logo.png" alt="layui">
+    </a>
+    <ul class="layui-nav">
+      <li class="layui-nav-item layui-this">
+        <a href="../index.htm" >文档</a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="../../demo/index.htm">演示</a>
+      </li>
+      
+      <li class="layui-nav-item">
+        <a href="../../../fly.layui.com/index.htm"  target="_blank">社区</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<ul class="site-dir">
+  <li><a href="#use"><cite>使用</cite></a></li>
+  <li><a href="#params"><cite>基础参数</cite></a></li>
+  <li><a href="#elem"><cite>指定元素</cite></a></li>
+  <li><a href="#title"><cite>设置标题</cite></a></li>
+  <li><a href="#height"><cite>设置最大高度</cite></a></li>
+  <li><a href="#encode"><cite>转义html标签</cite></a></li>
+  <li><a href="#skin"><cite>风格选择</cite></a></li>
+  <li><a href="#about"><cite>剔除关于</cite></a></li>
+</ul>
+<div class="layui-main site-inline">
+  <div class="site-tree">
+  <ul class="layui-tree">
+  
+    <li><h2>基础说明</h2></li>
+  
+    <li class="site-tree-noicon ">
+      <a href="../index.htm" ><cite>开始使用</cite></a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/infrastructure.html" >
+        <cite>底层支撑</cite>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/element.html" >
+        <cite>页面元素</cite>
+        <em>规范 / 公共类、属性</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/modules.html" >
+        <cite>组件规范</cite>
+        <em>使用 / 模块扩展</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../base/faq.html">
+        <cite>常见问题</cite>
+      </a>
+    </li>
+    
+    <li><h2>页面元素</h2></li>
+    
+    
+    
+    <li class="site-tree-noicon ">
+      <a href="../element/color.html">
+        <cite>颜色</cite>
+        <em>内置的色值参考</em>
+      </a>
+    </li>
+    
+    <li class="site-tree-noicon ">
+      <a href="../element/icon.html">
+        <cite>图标</cite>
+        <em>字体图标</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/auxiliar.html">
+        <cite>辅助</cite>
+        <em>引用 / 分块 / 横线…</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/button.html" >
+        <cite>按钮</cite>
+        <em>button组</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/form.html">
+        <cite>表单</cite>
+        <em>form元素集合</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/nav.html">
+        <cite>导航</cite>
+        <em>菜单 / Tab / 面包屑 …</em>
+      </a>
+    </li>
+    <li class="site-tree-noicon ">
+      <a href="../element/table.html">
+        <cite>表格</cite>
+        <em>table - v1.0.5 新增</em>
+      </a>
+    </li>
+   
+    
+    <li><h2>内置组件</h2></li>
+    
+    <li >
+      <a href="layer.html">
+        <i class="layui-icon" style="top: 3px;">&#xe638;</i><cite>弹出层</cite>
+        <em>layer</em>
+      </a>
+    </li>
+    <li >
+      <a href="layim.html">
+        <i class="layui-icon" style="position: relative; top: 3px;">&#xe63a;</i>
+        <cite>即时通讯</cite>
+        <em>layim</em>
+      </a>
+    </li>
+    <li >
+      <a href="laydate.html">
+        <i class="layui-icon" style="top: 1px;">&#xe637;</i><cite>日期时间选择</cite>
+        <em>laydate</em>
+      </a>
+    </li>
+    <li >
+      <a href="laypage.html">
+        <i class="layui-icon">&#xe633;</i><cite>分页</cite>
+        <em>laypage</em>
+      </a>
+    </li>
+    <li >
+      <a href="laytpl.html">
+        <i class="layui-icon">&#xe628;</i><cite>模板引擎</cite>
+        <em>laytpl</em>
+      </a>
+    </li>
+    <li >
+      <a href="layedit.html">
+        <i class="layui-icon">&#xe639;</i>
+        <cite>富文本编辑器</cite>
+        <em>layedit</em>
+      </a>
+    </li>
+    <li >
+      <a href="form.html">
+        <i class="layui-icon" style="top: 2px;">&#xe63c;</i>
+        <cite>表单</cite>
+        <em>form</em>
+      </a>
+    </li>
+    <li >
+      <a href="upload.html">
+        <i class="layui-icon">&#xe62f;</i>
+        <cite>文件上传</cite>
+        <em>upload</em>
+      </a>
+    </li>
+    <li >
+      <a href="element.html">
+        <i class="layui-icon" style="top: 1px; font-size: 18px;">&#xe62a;</i>
+        <cite>常用元素操作</cite>
+        <em>element</em>
+      </a>
+    </li>
+    <li >
+      <a href="tree.html">
+        <i class="layui-icon">&#xe62e;</i>
+        <cite>树形菜单</cite>
+        <em>tree</em>
+      </a>
+    </li>
+    
+    <li >
+      <a href="util.html">
+        <i class="layui-icon">&#xe631;</i>
+        <cite>工具块</cite>
+        <em>util</em>
+      </a>
+    </li>
+    <li >
+      <a href="flow.html">
+        <i class="layui-icon">&#xe636;</i>
+        <cite>流加载</cite>
+        <em>flow</em>
+      </a>
+    </li>
+    <li class="layui-this">
+      <a href="code.html">
+        <i class="layui-icon" style="top: 1px;">&#xe635;</i>
+        <cite>代码修饰器</cite>
+        <em>code</em>
+      </a>
+    </li>
+  </ul>
+</div>
+
+  <div class="site-content">
+    <h1 class="site-h1"><i class="layui-icon">&#xe635;</i>代码修饰器文档 - layui.code</h1>
+    <div class="site-tips site-text">
+      <p>code模块通常针对于程序员，它是layui中一个极其轻量的组成。通俗而言，该模块就是对你的<a>pre</a>元素进行一个修饰，从而保证你展现的代码更具可读性。目前它没有对不同的语言进行颜色高亮（因为目前感觉没有太大必要，后面layui全面稳定后，可能会完善该功能），但这丝毫不会影响它对你带来的便捷。</p>
+    </div>
+     <div class="site-tips site-text">
+      <p>模块加载名称：<a>code</a></p>
+    </div>
+    
+    
+<div style="margin: 15px 0; text-align: center; background-color: #F2F2F2;">
+  <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6111334333458862" data-ad-slot="9841027833"></ins>
+</div>
+
+    <div class="site-title">
+      <a name="use"></a>
+      <fieldset><legend>使用</legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>code模块的使用非常简单，请直接看代码，假设你在页面有这样一段pre标签：</p>
+      <pre class="layui-code" lay-title="html">
+&lt;pre class="layui-code">
+//代码区域
+var a = 'hello layui';
+&lt;/pre>      
+      </pre>
+      <p>那么你只需要经过下面的方式：</p>
+      <pre class="layui-code" lay-title="JavaScript">
+layui.use('code', function(){ //加载code模块
+  layui.code(); //引用code方法
+});
+      </pre>
+      <p>就可以将那段pre区块显示成你现在看到的这个样子：</p>
+      <pre class="layui-code">
+//代码区域
+var a = 'hello layui';
+      </pre>
+    </div>
+    
+    <div class="site-title">
+      <a name="params"></a>
+      <fieldset><legend>基础参数</legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>方法：<a>layui.code(options)</a><br>它接受一个对象参数options，支持以下key的设定</p>
+      <table class="site-table">
+        <thead>
+          <tr>
+            <th>参数</th>
+            <th>类型</th>
+            <th>描述</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td>elem</td>
+            <td>string</td>
+            <td>指定元素的选择器</td>
+          </tr>
+          <tr>
+            <td>title</td>
+            <td>string</td>
+            <td>设定标题</td>
+          </tr>
+          <tr>
+            <td>height</td>
+            <td>string</td>
+            <td>设置最大高度</td>
+          </tr>
+          <tr>
+            <td>encode</td>
+            <td>boolean</td>
+            <td>是否转义html标签，默认false</td>
+          </tr>
+          <tr>
+            <td>skin</td>
+            <td>string</td>
+            <td>风格选择（值见下文）</td>
+          </tr>
+          <tr>
+            <td>about</td>
+            <td>boolean</td>
+            <td>是否剔除右上关于</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><a>特别提示：</a><em>除了上述方式的设置，我们还允许你直接在pre标签上设置属性来替代，如：</em></p>
+      <pre class="layui-code" >
+&lt;pre class="layui-code" lay-title="" lay-height="" lay-skin="" lay-encode="">
+这样有木有觉得更方便些
+&lt;/pre>     
+      </pre>
+      <p>下面将针对每一个参数做进一步讲解。</p>
+    </div>
+    
+    <div class="site-title">
+      <a name="elem"></a>
+      <fieldset><legend>指定元素</legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>code模块会去自动查找class为<a>layui-code</a>的类，如果你初始给的不是该类，仅仅只是一个pre标签，那么需要通过elem设置选择器来指向元素：</p>
+      <pre class="layui-code" lay-title="JavaScript">
+layui.code({
+  elem: 'pre' //默认值为<a>.layui-code</a>
+});
+      </pre>
+    </div>
+    
+    <div class="site-title">
+      <a name="title"></a>
+      <fieldset><legend>设置标题</legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>即左上角显示的文本，默认值为code</p>
+      <pre class="layui-code" lay-title="JavaScript">
+layui.code({
+  title: 'JavaScript'
+});
+      </pre>
+      <p>或者直接在pre标签上设置属性<a>&lt;pre lay-title="JavaScript">&lt;/pre></a></p>
+    </div>
+    
+    <div class="site-title">
+      <a name="height"></a>
+      <fieldset><legend>设置最大高度</legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>你可以设置以下key来控制修饰器的最大高度。如果内容低于该高度，则会自适应内容高度；如果内容超过了该高度，则会自动出现滚动条。</p>
+      <pre class="layui-code" lay-title="JavaScript" lay-height="100px">
+layui.code({
+  height: '100px' //请注意必须加px。如果该key不设定，则会自适应高度，且不会出现滚动条。
+});
+ 
+ 
+ 
+ 
+ Hi，我是充数的 ^_^
+ 
+      </pre>
+      <p>或者直接在pre标签上设置属性<a>&lt;pre lay-height="100px">&lt;/pre></a></p>
+    </div>
+    <div class="site-title">
+      <a name="encode"></a>
+      <fieldset><legend>转义html标签</legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>事实上很多时候你都需要在pre标签中展现html标签，而不希望它被浏览器解析。那么code模块允许你这么做，只需要开启encode即可，如：</p>
+      <pre class="layui-code" lay-title="JavaScript">
+layui.code({
+  encode: true //是否转义html标签。默认不开启
+});
+      </pre>
+      <p>开启了encode后的效果如下：</p>
+      <pre class="layui-code" lay-title="显示html" lay-encode="true">
+<ul>
+  <li>HTML将不会被解析</li>
+  <li>有木有感觉非常方便</li>
+</ul>
+<script>
+!function(){
+  var a = 123;
+}();
+</script>
+      </pre>
+      <p>或者直接在pre标签上设置属性<a>&lt;pre lay-encode="true">&lt;/pre></a></p>
+    </div>
+    
+    <div class="site-title">
+      <a name="skin"></a>
+      <fieldset><legend>风格选择</legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>你肯定不会满足于code的某一种显示风格，而skin参数则允许你设定许多种显示风格，我们目前内置了两种，分别为默认和notepad</p>
+      <pre class="layui-code" lay-title="JavaScript">
+layui.code({
+  title: 'NotePad++的风格'
+  ,skin: 'notepad' //如果要默认风格，不用设定该key。
+});
+      </pre>
+      <p>上述的设定后，你会看到下面的样子</p>
+      <pre class="layui-code" lay-title="NotePad++的风格" lay-skin="notepad">
+i'm code.
+i'm code too.     
+      </pre>
+      <p>或者直接在pre标签上设置属性<a>&lt;pre lay-skin="notepad">&lt;/pre></a></p>
+    </div>
+    
+    <div class="site-title">
+      <a name="about"></a>
+      <fieldset><legend>剔除关于</legend></fieldset>
+    </div>
+    <div class="site-text">
+      <p>如果你不喜欢出现右上角的layui.code字眼，你是可以剔除的。设置<a>about: false</a>即可，请叫我雷锋。</p>
+    </div>
+    
+    <div class="layui-elem-quote">
+  <p>Layui - 用心与你沟通</p>
+</div>
+    
+  </div>
+</div>
+  
+<div class="layui-footer footer footer-doc">
+  <div class="layui-main">
+    <p>2017 &copy; <a href="../../index.htm">layui.com</a> MIT license</p>
+    <p>
+      <a href="../../../fly.layui.com/jie/3147.html" target="_blank">捐赠作者</a>
+      <!--<a href="javascript:layer.msg('暂无此页');">关于我们</a>-->
+      <a href="mailto:xianxin@layui.com">合作联系</a>
+      <a href="../../../github.com/sentsin/layui/index.htm" target="_blank">Git仓库</a>
+      <a href="../../../fly.layui.com/jie/2461.html"  target="_blank">微信公众号</a>
+    </p>
+  </div>
+</div>
+
+<div class="site-tree-mobile layui-hide">
+  <i class="layui-icon">&#xe602;</i>
+</div>
+<div class="site-mobile-shade"></div>
+<script src="../../../layui/layui.js" charset="utf-8"></script>
+    <script src="../../Js/doc.js" type="text/javascript"></script>
+<script>
+</script>
+</body>
+</html>
